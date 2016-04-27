@@ -1,7 +1,7 @@
 # voting-server
 Redux server application PoC.
 
-It's based on this [redux tutorial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html) of [@teropa](https://twitter.com/teropa). 
+It's based on this fantastic [redux tutorial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html) of [@teropa](https://twitter.com/teropa). 
 
 It's a quite simple exaple but it's actually a significant exaple of what can be done with Redux in the server side.
 
