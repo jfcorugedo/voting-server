@@ -1,6 +1,11 @@
 import {List, Map} from 'immutable';
 
 /**
+ * Initial state that should be used in case an undefined state is given
+ */
+export const INITIAL_STATE = Map();
+
+/**
  * Initializes entries of this state. It accepts any iterable  object but it always stores it as immutable
  * @param state Current state
  * @param entries Iterable object with all the entries that should be added to the state
