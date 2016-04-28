@@ -66,5 +66,5 @@ function getWinners(vote) {
 export function vote(state, entry) {
     //updateIn performs an operation over the given element (vote > tally > entry). If that element does not exists
     //it will create it with the default value specified (0 in this case)
-    return state.updateIn(['vote', 'tally', entry], 0, tally => tally + 1);
+    return state.updateIn(['tally', entry], 0, tally => tally + 1);
 }

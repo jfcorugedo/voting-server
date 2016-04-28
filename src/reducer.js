@@ -21,7 +21,8 @@ export default function reducer(state = INITIAL_STATE, action) {
         case 'NEXT':
             return next(state, action.entries);
         case 'VOTE':
-            return vote(state, action.entry);
+            //Similar tu state.set('vote', updater(state.get('vote', {})))
+            return state.update('vote', voteState => vote(voteState, action.entry));
         default:
             return state;
     }

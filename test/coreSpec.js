@@ -125,46 +125,30 @@ describe('application logic', () => {
     describe('vote', () => {
 
         it('creates a tally for the vote entry', () => {
-            const state = Map({
-                vote: Map({pair: List.of('Avengers', 'Antman')}),
-                entries: List.of('Superman')
-            });
+            const state = Map({pair: List.of('Avengers', 'Antman')});
 
             const nextState = vote(state, 'Avengers');
 
             expect(nextState).to.equal(Map(
                 {
-                    vote: Map(
-                        {
-                            pair: List.of('Avengers', 'Antman'),
-                            tally: Map({'Avengers': 1})
-                        }),
-                    entries: List.of('Superman')
-                }
-            ));
+                    pair: List.of('Avengers', 'Antman'),
+                    tally: Map({'Avengers': 1})
+                }));
         });
 
         it('increment tally of the given entry', () => {
-            const state = Map({
-                vote: Map(
+            const state = Map(
                     {
                         pair:  List.of('Avengers', 'Antman'),
                         tally: Map({'Avengers' : 1, 'Antman' : 2})
-                    }),
-                entries: List.of('Superman')
-            });
+                    });
 
             const nextState = vote(state, 'Avengers');
 
             expect(nextState).to.equal(Map(
                 {
-                    vote: Map(
-                        {
-                            pair:  List.of('Avengers', 'Antman'),
-                            tally: Map({'Avengers' : 2, 'Antman' : 2})
-                        }
-                    ),
-                    entries: List.of('Superman')
+                    pair:  List.of('Avengers', 'Antman'),
+                    tally: Map({'Avengers' : 2, 'Antman' : 2})
                 }
             ));
         });
