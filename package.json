@@ -10,7 +10,7 @@
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/testHelper.js --recursive",
     "test:watch": "npm run test -- --watch",
-    "start": "babel-node index.js"//Don't use it in production environment
+    "start": "babel-node index.js"
   },
   "keywords": [],
   "author": "jfcorugedo",
