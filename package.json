@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/testHelper.js --recursive",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "start": "babel-node index.js"//Don't use it in production environment
   },
   "keywords": [],
   "author": "jfcorugedo",
@@ -29,6 +30,7 @@
   },
   "dependencies": {
     "immutable": "3.8.1",
-    "redux": "3.5.2"
+    "redux": "3.5.2",
+    "socket.io": "1.4.5"
   }
 }
