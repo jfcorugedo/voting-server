@@ -1,7 +1,8 @@
 import {List, Map} from 'immutable';
 
 /**
- * Initial state that should be used in case an undefined state is given
+ * Initial state that should be used in case an undefined state is given. The state is the only variable we need
+ * in a Redux application.
  */
 export const INITIAL_STATE = Map();
 
