@@ -41,6 +41,16 @@ describe('immutability', () => {
                 'Antman'
             ));
         });
+
+        it('can be updated and returns another immutable List', () => {
+
+            let state = List.of(1,2,3,4);
+
+            let nextState = state.map(value => value*2);
+
+            expect(nextState).to.equal(List.of(2,4,6,8));
+            expect(state).to.equal(List.of(1,2,3,4));
+        });
     });
 
     describe('a tree', () => {
