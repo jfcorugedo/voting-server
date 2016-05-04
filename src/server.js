@@ -16,7 +16,9 @@ export default function startServer(store) {
     );
 
     io.on('connection', socket => {
+        //Send current state to any new client
         socket.emit('state', store.getState().toJS());
+        //When new data is received it will be sent to the store to be processed
         socket.on('action', (data) => {store.dispach(data)});
     });
 }
