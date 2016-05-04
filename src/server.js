@@ -10,12 +10,13 @@ export default function startServer(store) {
     const io = new Server().attach(PORT);
     console.log('Server started');
 
+    //Subscribe socketio to the store so it can broadcast any state change
     store.subscribe(
         () => io.emit('state', store.getState().toJS())
     );
 
     io.on('connection', socket => {
         socket.emit('state', store.getState().toJS());
-        socket.on('action', store.dispatch.bind(store));
+        socket.on('action', (data) => {store.dispach(data)});
     });
 }
