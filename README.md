@@ -1,4 +1,4 @@
-# voting-server
+# voting-server [![Build status](https://travis-ci.org/jfcorugedo/voting-client.svg?branch=master)](https://travis-ci.org/jfcorugedo/voting-client)
 Redux server application PoC.
 
 It's based on this fantastic [redux tutorial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html) of [@teropa](https://twitter.com/teropa). 
