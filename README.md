@@ -1,4 +1,5 @@
-# voting-server [![Build status](https://travis-ci.org/jfcorugedo/voting-client.svg?branch=master)](https://travis-ci.org/jfcorugedo/voting-client)
+# voting-server [![Build status](https://travis-ci.org/jfcorugedo/voting-server.svg?branch=master)](https://travis-ci.org/jfcorugedo/voting-server) [![Coverage Status](https://coveralls.io/repos/github/jfcorugedo/voting-server/badge.svg?branch=master)](https://coveralls.io/github/jfcorugedo/voting-server?branch=master)
+
 Redux server application PoC.
 
 It's based on this fantastic [redux tutorial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html) of [@teropa](https://twitter.com/teropa). 
